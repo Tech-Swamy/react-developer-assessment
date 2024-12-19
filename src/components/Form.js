@@ -14,7 +14,7 @@ const Form = (props) => {
 
   const getSingleTask = async () => {
     const result = await getTaskById(editTaskId);
-    console.log(result);
+    // console.log(result);
     Object.keys(result).forEach((key) => {
       setData((prevData) => ({ ...prevData, [key]: result[key] }));
     });
