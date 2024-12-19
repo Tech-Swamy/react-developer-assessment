@@ -20,7 +20,7 @@ const getTaskById = async (id) => {
   await axios.get(`http://localhost:8000/tasks/${id}`).then(
     (response) => {
       result = response.data;
-      console.log("result is for edit", result);
+      // console.log("result is for edit", result);
     },
     (error) => {
       result = error;
